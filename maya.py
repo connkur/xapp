@@ -15,6 +15,7 @@ class Template(XAppTemplate):
 
         # Allow access to parent class methods
         super(Template, self).__init__()
+        print("--- xapp running in Maya ---")
 
 
     def get_selection(self):
@@ -26,3 +27,4 @@ class Template(XAppTemplate):
         """
 
         return maya.cmds.ls(sl=True)
+    
