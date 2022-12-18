@@ -15,6 +15,7 @@ class Template(XAppTemplate):
 
         # Allow access to parent class methods
         super(Template, self).__init__()
+        print("--- xapp running in Blender ---")
 
 
     def get_selection(self):
@@ -26,3 +27,4 @@ class Template(XAppTemplate):
         """
 
         return [obj.name for obj in bpy.context.selected_objects]
+    
