@@ -10,3 +10,6 @@ if app_name == "maya":
     from .maya import Template
 elif app_name == "blender":
     from .blender import Template
+else:
+    # Will result in TypeError letting you know to sub-class XAppTemplate
+    from .main import XAppTemplate as Template
