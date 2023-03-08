@@ -1,14 +1,22 @@
 # xapp
-A template package for writing app agnostic tools in Python
+## A template for writing app agnostic tools in Python
 
-Expectations:
-1. Package is imported into Blender or Maya. This is easily extendable though.
+### Why Use xapp?
+xapp is useful if you need to support a tool in multiple DCC applications, but don't want to write the same code twice.
 
-How To Use:
+### Expectations
+1. Right now, xapp will run in Maya and Blender. You will need to extend it if there is another app you would like to run it in.
+
+### How To Use
 1. Add the xapp package to the desired app's PYTHONPATH or default scripts directory
 2. Run the following lines of code:
-
+```
   import xapp
 
   class_inst = xapp.Template()
   class_inst.print_selection()
+```
+&nbsp;
+
+![Maya](docs/images/example_maya.png)
+![Blender](docs/images/example_blender.png)
