@@ -17,5 +17,5 @@ inst = xapp.run(headless = False)
 ```
 &nbsp;
 
-![Maya](docs/images/example_maya.png)
-![Blender](docs/images/example_blender.png)
+![Maya](docs/images/example_maya_02.jpeg)
+![Blender](docs/images/example_blender_02.jpeg)
