@@ -25,6 +25,6 @@ class Template(XAppTemplate):
         Returns: list
 
         """
-
-        return [obj.name for obj in bpy.context.selected_objects]
+        
+        return [ o.name for o in bpy.context.scene.objects if o.select_get() ]
     
